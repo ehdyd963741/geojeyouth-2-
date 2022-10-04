@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
- <link rel="shortcut icon" href="favicon.ico"/>
+  <link rel="shortcut icon" href="favicon.ico" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>거제청년센터</title>
@@ -14,6 +14,10 @@
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
+
+  <!-- jQuery UI -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
   <!-- Swiper -->
   <link rel="stylesheet" href="js/swiper/swiper.min.css">
@@ -35,8 +39,8 @@
     <div class="more-div">
       <button class="more-div-close">
         <span class="icon-x"></span>
-      </button>     
-        
+      </button>
+
       <h2>
         <b>거제청년센터 이룸</b>
         전체메뉴
@@ -354,7 +358,7 @@
             <a href="#" class="community-more">전체보기</a>
           </div>
           <div class="community-main">
-            <ul class="community-list">
+            <ul class="community-list data-info">
               <li>
                 <a href="#">6월 문화특강 [모스큐브&멘톨비누 만들기]</a>
                 <span>2022.06.17</span>
@@ -380,7 +384,7 @@
             <a href="#" class="community-more">전체보기</a>
           </div>
           <div class="community-main">
-            <ul class="community-list">
+            <ul class="community-list data-news">
               <li>
                 <a href="#">6월 문화특강 [모스큐브&멘톨비누 만들기]</a>
                 <span>2022.06.17</span>
@@ -405,7 +409,9 @@
             <h3>센터일정</h3>
             <a href="#" class="community-more">전체보기</a>
           </div>
-          <div class="community-main">
+          <div class="community-main community-main-calendar">
+
+            <div id="datepicker"></div>
 
           </div>
         </div>
@@ -419,8 +425,8 @@
           <a href="#" class="gallery-more">전체보기</a>
           <ul class="gallery-list clearfix">
             <li>
-              <a href="#">
-                <span class="gallery-img gallery-1"></span>
+              <a href="#" id="gallery-list-1">
+                <!-- <span class="gallery-img gallery-1"></span>
                 <p class="gallery-cont">
                   <span class="gallery-title">
                     3월 인문학 특강 [우리 삶에 철학이 필요한 이유]
@@ -428,12 +434,12 @@
                   <span class="gallery-date">
                     2021-12-14
                   </span>
-                </p>
+                </p> -->
               </a>
             </li>
             <li>
-              <a href="#">
-                <span class="gallery-img gallery-2"></span>
+              <a href="#" id="aaa">
+                <!-- <span class="gallery-img gallery-2"></span>
                 <p class="gallery-cont">
                   <span class="gallery-title">
                     12월 문화특강 주간 ♡ 크리스마스 입욕제 만들기
@@ -441,12 +447,12 @@
                   <span class="gallery-date">
                     2021-12-14
                   </span>
-                </p>
+                </p> -->
               </a>
             </li>
             <li>
-              <a href="#">
-                <span class="gallery-img gallery-3"></span>
+              <a href="#" id="bbb">
+                <!-- <span class="gallery-img gallery-3"></span>
                 <p class="gallery-cont">
                   <span class="gallery-title">
                     12월 문화특강 주간 ♡ 플레이팅 도마 만들기
@@ -454,7 +460,7 @@
                   <span class="gallery-date">
                     2021-12-14
                   </span>
-                </p>
+                </p> -->
               </a>
             </li>
           </ul>
